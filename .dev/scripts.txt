@@ -1,0 +1,11 @@
+# Run .clang-format
+
+clang-format -i ../../src/**/*.cpp ../../src/**/*.h
+
+
+####################################################
+
+
+# Run static analysis using .clang-tidy
+
+clang-tidy ../../src/**/*.cpp -- -std=c++20

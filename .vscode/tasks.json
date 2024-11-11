@@ -1,0 +1,27 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "Build LyricBuddy",
+			"type": "shell",
+			"command": "make",
+			"args": [],
+			"group": {
+				"kind": "build",
+				"isDefault": true
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"detail": "Compiles LyricBuddy using the Makefile"
+		},
+		{
+			"label": "Clean LyricBuddy",
+			"type": "shell",
+			"command": "make",
+			"args": ["clean"],
+			"group": "build",
+			"problemMatcher": []
+		}
+	]
+}

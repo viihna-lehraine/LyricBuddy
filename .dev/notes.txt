@@ -1,0 +1,41 @@
+1. Let user elect to use default values from config/var/.env or select their own values within allowed ranges
+
+###############################################################################
+
+2. Looking towards production, have program check if there is an API key available.
+
+	A. If key is not available (in prod, it shouldn't be unless a user stores their key through a yet-to-be-added mechanism), CLI will require user to enter an API Key.
+
+	B. Create secure API key storage mechanism
+
+	C. Before proceeding, perform the following
+	
+		C1. Check connection to API URL
+
+		C2. Ensure key is valid (without spending tokens!)
+
+		C3. Return a status message
+		
+		C4. If success, return status message then proceed. If failure, return status message and request additional, conditional info from user based on reason for failure (not enough tokens, cannot connect to API, invalid key, etc)
+
+###############################################################################
+
+3. Node environment? Not sure if that makes sense for a C++ project, but I want to use prettier and eslint somehow.
+
+###############################################################################
+
+4. Update paths and file inclusions in .vscode/*.json and Makefile
+
+###############################################################################
+
+5. Move other config files in root to config/env/ (don't forget to update paths)!
+
+###############################################################################
+
+6. Create files in scripts/ according to .dev/scripts.txt
+
+###############################################################################
+
+7. Check ignore.txt
+
+###############################################################################
