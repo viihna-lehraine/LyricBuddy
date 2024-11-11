@@ -38,4 +38,14 @@
 
 7. Check ignore.txt
 
+	A. ensure that if api.secure.key is created, api.key is deleted
+
+	B. similarly, program should check if api.key AND api.secure.key don't exist, and if neither of them do, api.key should be silently regenerated
+
+	C. if api.secure.key exists in plaintext, CLI warning should be shown to user with option to keep anyway, or (STRONGLY ENCOURAGED) to delete and remake the secure file. Advise user to contact developer
+
+###############################################################################
+
+8. Startup should show basic file and developer information, including ways to easily contact dev
+
 ###############################################################################
